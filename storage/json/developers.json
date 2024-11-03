@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "uniq": "DEV1",
+        "duration": 1,
+        "difficulty": 1
+    },
+    {
+        "id": 2,
+        "uniq": "DEV2",
+        "duration": 1,
+        "difficulty": 2
+    },
+    {
+        "id": 3,
+        "uniq": "DEV3",
+        "duration": 1,
+        "difficulty": 3
+    },
+    {
+        "id": 4,
+        "uniq": "DEV4",
+        "duration": 1,
+        "difficulty": 4
+    },
+    {
+        "id": 5,
+        "uniq": "DEV5",
+        "duration": 1,
+        "difficulty": 5
+    }
+]
