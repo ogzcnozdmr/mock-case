@@ -1,5 +1,5 @@
 # mock-case
-Mock Case
+Task Distribute Case
 
 ### Gereksinimler
 - PHP 8.3.8 ve üstü
