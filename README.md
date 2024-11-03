@@ -43,6 +43,8 @@ php artisan task:fetch
 php artisan task:distribute
 ```
 - Task Groups'a ait task verileri developerlara olduğu kadar eşit seviyede bölüştürülerek task_assigneds tablosuna aktarılır
+- APP_URL/task linkine giderek task gruplarını görebilirsiniz.
+- Bulunan verilerin yanındaki Task Detayına tıklayarak taskın detayına gidebilir ve taskın minimum kaç haftada biteceğiyle beraber developer bazlı task detayını görebilirsiniz
 ### Task Paylaştırma Algoritması
 - Developerlar çekilirken veri tabanında bulunduğu haliyle şekilir sıralaması önemli değildir
 - Tasklar çekilirken en küçük zorlukta olan işten itibaren sıralanarak çekilir bu önemlidir
