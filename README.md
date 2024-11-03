@@ -10,7 +10,7 @@ Mock Case
 - .env.example dosyasını .env dosyasına kopyalayarak gerekli veritabanı parametre ayarlamalarını yapıyoruz.
 - extra key generator yapmaya gerek yoktur env dosyasındaki keylerle devam edebiliriz
 ```
-php composer update
+composer update
 ```
 - komutu ile composer.json'da ki gerekli paket kurulumlarını yapıyoruz
 ```
@@ -45,6 +45,8 @@ php artisan task:distribute
 - Task Groups'a ait task verileri developerlara olduğu kadar eşit seviyede bölüştürülerek task_assigneds tablosuna aktarılır
 - APP_URL/task linkine giderek task gruplarını görebilirsiniz.
 - Bulunan verilerin yanındaki Task Detayına tıklayarak taskın detayına gidebilir ve taskın minimum kaç haftada biteceğiyle beraber developer bazlı task detayını görebilirsiniz
+- istenirse tekrardan task fetch edilip distribute edilebilir tekrar bir iş grubu oluşturulup paylaşımı yapılır.(istenirse task jsonlarn içeriği çoğaltılabilir veya TaskFetchCommand içerisindeki $url değişkenine extra providerlar eklenebilir yada aynı providerlar çoğullanarak daha fazla veri gelmesi sağlanabilir)
+- **NOT: örnek verilen task mock verileri 12 kata kadar çoğullanıp algoritma test edilmiştir**
 ### Task Paylaştırma Algoritması
 - Developerlar çekilirken veri tabanında bulunduğu haliyle şekilir sıralaması önemli değildir
 - Tasklar çekilirken en küçük zorlukta olan işten itibaren sıralanarak çekilir bu önemlidir
