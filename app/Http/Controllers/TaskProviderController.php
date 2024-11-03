@@ -13,7 +13,7 @@ class TaskProviderController extends Controller
      */
     public function run(int $id = null) : Response
     {
-        $path = base_path("storage/json/mock/mock{$id}.json");
+        $path = base_path("storage/json/task/task{$id}.json");
         if (file_exists($path)) {
             $data = json_decode(file_get_contents($path), true);
             //json hatalıysa

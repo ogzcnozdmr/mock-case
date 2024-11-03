@@ -29,10 +29,10 @@ php artisan test
 ```
 - Test sınıflarını kontrol edip projemizi başlatıyoruz
 
-- /app/storage/json/mock1.json
-- /app/storage/json/mock2.json
+- /app/storage/json/task/task1.json
+- /app/storage/json/task/task2.json
 - örnek json dosyalarından servisler oluşturulmuştur.
-- /data/task/{mockId} provider'ı ile sanki dışardan verileri alıyormuşuz gibi proje içerisinde basit provider eklenmiştir.
+- /data/task/{taskId} provider'ı ile sanki dışardan verileri alıyormuşuz gibi proje içerisinde basit provider eklenmiştir.
 ```
 php artisan task:fetch
 ```
@@ -54,7 +54,7 @@ php artisan task:distribute
 - (iş zorluğu * iş süresi / developer'in 1 saatteki zorluğu) -> saat bazında yukarı yuvarlanır küsüratlı saatler olamayacağı için
 - Developerların hepsinin boş zamanı bittiyse eğer hepsini yeni haftaya geçirir
 - Taskları küçükten büyüğe sıralamamızın sebebi öncelikle küçük iş yükü olan taskları bitirmektir zira 45 efordan fazla iş yüklerini haftalık bazda küçük efora sahip olan developerlar gerçekleştiremiyor
-- örneğin 1 mock verisinde iş yükü: 6 verilen süre : 12 saattir bunu 1 saatte 1 iş yükü bitiren developer 72 saatte bitireceği için haftalık bazda 45 saati geçtiğinden dolayı bu işe ataması yapılamamaktadır ve sıradaki developera geçilmektedir
+- örneğin 1 task verisinde iş yükü: 6 verilen süre : 12 saattir bunu 1 saatte 1 iş yükü bitiren developer 72 saatte bitireceği için haftalık bazda 45 saati geçtiğinden dolayı bu işe ataması yapılamamaktadır ve sıradaki developera geçilmektedir
 
 ### Test Sınıfları
 - Mock servisi testleri
