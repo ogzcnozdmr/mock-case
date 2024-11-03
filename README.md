@@ -47,7 +47,7 @@ php artisan task:distribute
 - APP_URL/task linkine giderek task gruplarını görebilirsiniz.
 - Bulunan verilerin yanındaki Task Detayına tıklayarak taskın detayına gidebilir ve taskın minimum kaç haftada biteceğiyle beraber developer bazlı task detayını görebilirsiniz
 - istenirse tekrardan task fetch edilip distribute edilebilir tekrar bir iş grubu oluşturulup paylaşımı yapılır.(istenirse task jsonlarn içeriği çoğaltılabilir veya TaskFetchCommand içerisindeki $url değişkenine extra providerlar eklenebilir yada aynı providerlar çoğullanarak daha fazla veri gelmesi sağlanabilir)
-- **NOT: örnek verilen task mock verileri 12 kata kadar çoğullanıp algoritma test edilmiştir**
+- **NOT: örnek verilen task verileri 12 kata kadar çoğullanıp algoritma test edilmiştir**
 ### Task Paylaştırma Algoritması
 - Developerlar çekilirken veri tabanında bulunduğu haliyle şekilir sıralaması önemli değildir
 - Tasklar çekilirken en küçük zorlukta olan işten itibaren sıralanarak çekilir bu önemlidir
@@ -60,7 +60,7 @@ php artisan task:distribute
 - örneğin 1 task verisinde iş yükü: 6 verilen süre : 12 saattir bunu 1 saatte 1 iş yükü bitiren developer 72 saatte bitireceği için haftalık bazda 45 saati geçtiğinden dolayı bu işe ataması yapılamamaktadır ve sıradaki developera geçilmektedir
 
 ### Test Sınıfları
-- Mock servisi testleri
+- Task servisi testleri
 - Model testleri (örnek olarak developers model seçilmiştir)
 - Task çekme ve örnek pattern testleri
 - Task görev dağılımı testi (Örnek Developer ve Task oluşturularak)
