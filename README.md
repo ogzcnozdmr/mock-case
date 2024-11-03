@@ -17,7 +17,8 @@ composer update
 php artisan migrate --seed
 ```
 - komutunu çalıştırarak gerekli migrationları ayağa kaldırıyoruz ve seederları ekliyoruz
-- developer veri tabanı seederları çalıştırılmıştır ve örnek developerlar eklemiştir
+- developer veri tabanı seederları çalıştırılmıştır
+- /storage/json/developers.json dosyasındaki örnek developerlar eklemiştir
 - eğer bu kısımda hat aldıysanız .env dosyasındaki database keylerini gözden geçiriniz
 
 ```
